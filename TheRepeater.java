@@ -1,3 +1,5 @@
+package GoogleCodeJam;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -27,7 +29,7 @@ public class TheRepeater {
                     v = 1;
                 }
             }
-            //System.out.println(arr.get(0).size()+" "+arr.get(1).size());
+            // System.out.println(arr.get(0).size()+" "+arr.get(1).size());
             boolean flag = true;
             int m = arr.get(0).size();
             for (int i = 0; i < n; i++) {
@@ -59,9 +61,9 @@ public class TheRepeater {
                     for (int j = 0; j < n; j++) {
                         lsum += Math.abs(arr.get(j).get(i).val - k);
                     }
-                    sum=Math.min(sum, lsum);
+                    sum = Math.min(sum, lsum);
                 }
-                total+=sum;
+                total += sum;
 
             }
             System.out.println("Case #" + (temp - tc) + ": " + total);
